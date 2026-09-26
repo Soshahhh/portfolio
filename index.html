@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soroush Shahhoseini · Architect</title>
+    <meta
+      name="description"
+      content="Portfolio of Soroush Shahhoseini, architect working across design, AI in architecture and architectural presentation."
+    />
+    <meta property="og:title" content="Soroush Shahhoseini · Architect" />
+    <meta
+      property="og:description"
+      content="A portfolio that is still under construction, like its author."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#edeeeb" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('ss-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+        var l = localStorage.getItem('ss-lang');
+        if (l === 'fa') { document.documentElement.lang = 'fa'; document.documentElement.dir = 'rtl'; }
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-YDpXF5Ym.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DTZjxNgN.css">
+  </head>
+  <body>
+    <a class="skip" href="#about" data-i18n="skip">Skip to content</a>
+
+    <header class="nav">
+      <a class="nav__brand" href="#about" data-scroll="about">
+        <span class="nav__mark" aria-hidden="true"></span>
+        <span data-i18n="name">Soroush Shahhoseini</span>
+        <span class="nav__tag"><span data-i18n="brandTag">Portfolio</span> <span class="nav__ver" id="build-version" dir="ltr"></span></span>
+      </a>
+      <nav class="nav__links" aria-label="Sections"></nav>
+      <div class="nav__tools">
+        <button class="nav__btn" id="lang-toggle" type="button" aria-label="Switch language"></button>
+        <button class="nav__btn nav__btn--icon" id="theme-toggle" type="button" aria-label="Toggle theme">
+          <i class="ph ph-circle-half" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="stage" id="stage" aria-hidden="true">
+      <canvas id="scene"></canvas>
+      <div class="board">
+        <div class="board__title" data-i18n="boardTitle">Project board</div>
+        <dl>
+          <div><dt data-i18n="boardProject">Project</dt><dd data-i18n="boardProjectValue">Soroush Shahhoseini</dd></div>
+          <div><dt data-i18n="boardStarted">Started</dt><dd data-i18n="boardStartedValue">2003</dd></div>
+          <div class="board__chapter"><dt data-i18n="boardChapter">Chapter</dt><dd class="board__open" id="board-chapter"></dd></div>
+        </dl>
+      </div>
+      <div class="stage__fallback" data-i18n="noWebgl">The 3D model needs WebGL, which is not available in this browser.</div>
+    </div>
+
+    <a class="cue" href="#academic" data-scroll="academic">
+      <span class="cue__label" data-i18n="scrollCue">Scroll to build</span>
+      <span class="cue__track" aria-hidden="true"><span></span></span>
+    </a>
+
+    <main class="content" id="content">
+      <section class="section section--hero" id="about" data-stage="0"></section>
+      <section class="section" id="academic" data-stage="1"></section>
+      <section class="section" id="professional" data-stage="2"></section>
+      <section class="section" id="software" data-stage="3"></section>
+      <section class="section" id="research" data-stage="4"></section>
+      <section class="section section--last" id="vision" data-stage="5"></section>
+      <footer class="footer" id="contact"></footer>
+    </main>
+
+    <aside class="panel" id="panel" aria-hidden="true" data-native-scroll>
+      <div class="panel__inner" role="dialog" aria-modal="true" aria-labelledby="panel-title"></div>
+    </aside>
+
+    <div class="project" id="project" aria-hidden="true" data-native-scroll>
+      <article class="project__inner" role="dialog" aria-modal="true" aria-labelledby="project-title"></article>
+    </div>
+
+  </body>
+</html>
